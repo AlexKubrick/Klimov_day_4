@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Klimov_day_4_Traffic_lights"
+rootProject.name = "Neco_lesson_11_homework"
 include ':app'

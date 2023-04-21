@@ -1,7 +1,3 @@
 <resources>
-    <string name="app_name">Klimov_day_4_Traffic_lights</string>
-    <string name="Red">Красный</string>
-    <string name="Yellow">Желтый</string>
-    <string name="Green">Зеленый</string>
-    <string name="yellow">yellow</string>
+    <string name="app_name">Neco_lesson_11_homework</string>
 </resources>

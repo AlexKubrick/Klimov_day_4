@@ -2,60 +2,68 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/redColor"
+    android:background="#D49797"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_red"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Red"
-        app:layout_constraintBottom_toTopOf="@+id/button_yellow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text|textPersonName"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        tools:layout_editor_absoluteX="26dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Earned"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Red"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_earn"
+        app:layout_constraintEnd_toEndOf="@+id/Name"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <Button
+        android:id="@+id/button_earn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="236dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Earn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_green"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintEnd_toEndOf="@+id/Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Name" />
 
-    <Button
-        android:id="@+id/button_yellow"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/Yellow"
-        app:layout_constraintBottom_toTopOf="@+id/button_green"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Insert password"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button_earn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_red"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/button_green"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Green"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_yellow"
-        app:layout_constraintVertical_bias="0.5" />
-
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintVertical_bias="0.379" />
 </androidx.constraintlayout.widget.ConstraintLayout>

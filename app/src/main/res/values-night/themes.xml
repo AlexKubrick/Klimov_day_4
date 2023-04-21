@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Klimov_day_4_Traffic_lights" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Neco_lesson_11_homework" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>

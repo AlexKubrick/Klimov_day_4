@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'ru.alexkubrick.klimov_day_4_traffic_lights'
+    namespace 'ru.alexkubrick.neco_lesson_11_homework'
     compileSdk 33
 
     defaultConfig {
-        applicationId "ru.alexkubrick.klimov_day_4_traffic_lights"
+        applicationId "ru.alexkubrick.neco_lesson_11_homework"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -29,6 +29,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
